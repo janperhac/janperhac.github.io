@@ -14,4 +14,4 @@ The university publication catalogue could not be retrieved during this update. 
 
 No study dates, employment start dates, personal photo, or unverified social identifiers were added. The original Shannon template content is preserved under `example_contents/shannon/` outside the live content collections. Blog navigation is hidden pending original posts.
 
-The site is configured for https://janperhac.github.io/my-portfolio/ and deployed through GitHub Actions.
+The site is configured for https://janperhac.github.io/ and deployed through GitHub Actions.

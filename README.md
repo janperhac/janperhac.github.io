@@ -38,7 +38,7 @@ See [CONTENT-SOURCES.md](CONTENT-SOURCES.md) for content sources and remaining d
 
 ## Deployment
 
-The site is published at https://janperhac.github.io/my-portfolio/.
+The site is published at https://janperhac.github.io/.
 
 GitHub Pages must use **GitHub Actions** as its source in Settings → Pages. Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds and deploys the site.
 

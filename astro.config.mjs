@@ -19,6 +19,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://janperhac.github.io',
-  base: '/my-portfolio',
+  base: '/',
   integrations: [sitemap()],
 });
