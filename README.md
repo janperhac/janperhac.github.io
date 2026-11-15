@@ -113,6 +113,12 @@ All standard build commands run through `npm`:
 | `npm run preview` | Previews your production build locally |
 | `npm run format` | Runs Prettier on all files to format code |
 
+## 🚀 Deploying to GitHub Pages
+
+In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. The included `Deploy to GitHub Pages` workflow builds the Astro site and deploys its output on pushes to `main`.
+
+Do not use **Deploy from a branch**: GitHub's default Pages build uses Jekyll, which cannot parse Astro component frontmatter.
+
 ## 🤝 Contributing & License
 
 Contributions, issues, and feature requests are always welcome! Feel free to check the [issues page](https://github.com/rubzip/academic-portfolio-astro/issues).
