@@ -8,7 +8,7 @@ export const PAGES: PagesConfig = {
     },
     blog: {
         title: "Blog",
-        subtitle: "Thoughts on physics, philosophy, and music.",
+        subtitle: "Notes on logic, type theory, and teaching.",
         isActive: true,
     },
     publications: {
@@ -22,7 +22,7 @@ export const PAGES: PagesConfig = {
         isActive: true,
     },
     projects: {
-        title: "Code & Projects",
+        title: "Research & Projects",
         subtitle: "Open source contributions and technological experiments.",
         isActive: true,
     },

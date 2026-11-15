@@ -1,14 +1,18 @@
 ---
-import BaseListing from "../../layouts/BaseListing.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { PAGES } from "../../config";
-
-if (PAGES.publications.isActive === false) {
-    return Astro.redirect("/404");
-}
 ---
 
-<BaseListing
-    collection="publications"
-    title={PAGES.publications.title}
-    subtitle={PAGES.publications.subtitle}
-/>
+<BaseLayout title={PAGES.publications.title}>
+    <div class="container-narrow">
+        <header class="page-header">
+            <h1 class="page-title">Publications</h1>
+            <p class="page-subtitle">Research outputs and publication records.</p>
+        </header>
+        <div class="prose">
+            <p>My publication record is maintained in the Technical University of Košice library catalogue.</p>
+            <p><a href="https://epc.lib.tuke.sk/EvidPublQ.aspx?meno=J%C3%A1n&amp;priezv=Perh%C3%A1%C4%8D&amp;rok=9999" target="_blank" rel="noreferrer">University publication catalogue</a></p>
+            <p><a href="https://www.webofscience.com/wos/author/record/1921401" target="_blank" rel="noreferrer">Web of Science researcher profile</a></p>
+        </div>
+    </div>
+</BaseLayout>

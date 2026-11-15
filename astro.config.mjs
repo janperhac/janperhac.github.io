@@ -18,7 +18,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://rubzip.github.io',
-  base: '/academic-portfolio-astro',
+  // Set the public origin before deployment.
+  site: 'http://localhost:4321',
+  base: '/',
   integrations: [sitemap()],
 });
