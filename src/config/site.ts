@@ -1,7 +1,7 @@
 import type { SiteConfig, ThemeConfig, SettingsConfig, UmamiAnalyticsConfig, AnalyticsConfig } from "../types";
 
 export const SITE: SiteConfig = {
-    website: "http://localhost:4321/",
+    website: "https://janperhac.github.io/my-portfolio/",
     author: "Ján Perháč",
     desc: "Academic portfolio of Ján Perháč: logic, type theory and proof assistants.",
     title: "Ján Perháč",

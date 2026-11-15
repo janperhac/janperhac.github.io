@@ -1,4 +1,5 @@
 ---
+import { withBase } from "../../utils/urls";
 import { SITE, THEME_CONFIG, SETTINGS } from "../../config";
 import Icon from "../ui/Icon.astro";
 
@@ -21,7 +22,7 @@ const showDevTools = import.meta.env.DEV || SETTINGS.addDevToolsInProduction;
             ></span
         >
         <a
-            href="/rss.xml"
+            href={withBase("/rss.xml")}
             aria-label="RSS Feed"
             title="RSS Feed"
             target="_blank"
@@ -45,7 +46,7 @@ const showDevTools = import.meta.env.DEV || SETTINGS.addDevToolsInProduction;
         {
             showDevTools && (
                 <a
-                    href="/dev-tools"
+                    href={withBase("/dev-tools")}
                     aria-label="Developer Tools"
                     title="Developer Tools"
                     class="btn-icon"

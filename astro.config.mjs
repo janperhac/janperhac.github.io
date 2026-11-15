@@ -18,8 +18,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  // Set the public origin before deployment.
-  site: 'http://localhost:4321',
-  base: '/',
+  site: 'https://janperhac.github.io',
+  base: '/my-portfolio',
   integrations: [sitemap()],
 });

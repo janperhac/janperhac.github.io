@@ -1,4 +1,5 @@
 ---
+import { withBase } from "../utils/urls";
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BaseItemCard from "../components/ui/BaseItemCard.astro";
@@ -42,13 +43,13 @@ const sortedEntries = entries.sort((a: any, b: any) => {
     {page && page.lastPage > 1 && (
         <nav class="pagination">
             {page.url.prev ? (
-                <a href={page.url.prev} class="pagination-link">Newer</a>
+                <a href={withBase(page.url.prev)} class="pagination-link">Newer</a>
             ) : (
                 <span class="pagination-inactive">Newer</span>
             )}
             <span class="pagination-info">Page {page.currentPage} of {page.lastPage}</span>
             {page.url.next ? (
-                <a href={page.url.next} class="pagination-link">Older</a>
+                <a href={withBase(page.url.next)} class="pagination-link">Older</a>
             ) : (
                 <span class="pagination-inactive">Older</span>
             )}

@@ -14,4 +14,4 @@ The university publication catalogue could not be retrieved during this update. 
 
 No study dates, employment start dates, personal photo, or unverified social identifiers were added. The original Shannon template content is preserved under `example_contents/shannon/` outside the live content collections. Blog navigation is hidden pending original posts.
 
-The site origin is configured for local preview at http://localhost:4321/ with a root base path. Set `site` in `astro.config.mjs` and `SITE.website` in `src/config/site.ts` to the actual public URL before deployment.
+The site is configured for https://janperhac.github.io/my-portfolio/ and deployed through GitHub Actions.

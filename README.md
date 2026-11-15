@@ -37,9 +37,11 @@ See [CONTENT-SOURCES.md](CONTENT-SOURCES.md) for content sources and remaining d
 
 ## Deployment
 
-Before publishing, set the public URL in both `astro.config.mjs` (`site`) and `src/config/site.ts` (`SITE.website`). Adjust Astro's `base` if deploying under a subpath.
+The site is published at https://janperhac.github.io/my-portfolio/.
 
-Run `npm run build` and deploy the contents of `dist/` to a static host.
+GitHub Pages must use **GitHub Actions** as its source in Settings → Pages. Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds and deploys the site.
+
+The public origin and base path are set in `astro.config.mjs`; `SITE.website` in `src/config/site.ts` contains the full URL.
 
 ## Attribution
 
