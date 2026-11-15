@@ -6,6 +6,7 @@ Personal academic website built with Astro, TypeScript, and Tailwind CSS v4. Con
 
 Requires Node.js **22.12.0 or newer**.
 
+
 ```bash
 npm ci
 npm run dev
